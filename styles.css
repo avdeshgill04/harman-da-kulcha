@@ -311,6 +311,58 @@ body {
   border-radius: 0 var(--radius) var(--radius) 0;
 }
 
+.coowners {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(201, 162, 39, 0.2);
+}
+
+.coowners-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--color-gold);
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+.coowners-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.coowner {
+  text-align: center;
+}
+
+.coowner img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--color-gold);
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+.coowner-name {
+  font-weight: 600;
+  color: var(--color-cream);
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .coowner img {
+    width: 130px;
+    height: 130px;
+  }
+  .coowners-photos {
+    gap: 1.5rem;
+  }
+}
+
 /* Menu */
 .menu {
   padding: 5rem 0;
