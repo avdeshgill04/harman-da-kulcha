@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harman da Kulcha — Go live</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; max-width: 560px; margin: 2rem auto; padding: 0 1.5rem; }
+    h1 { font-size: 1.35rem; color: #1a1510; }
+    h2 { font-size: 1rem; color: #6b5310; margin: 1.5rem 0 0.5rem; }
+    .step { background: #f5ecd8; border: 2px solid #c9a227; border-radius: 12px; padding: 1.25rem; margin: 1rem 0; }
+    .step strong { display: block; margin-bottom: 0.5rem; color: #6b5310; }
+    a.btn { display: inline-block; margin: 0.5rem 0; padding: 0.75rem 1.25rem; background: #c9a227; color: #1a1510; text-decoration: none; font-weight: 600; border-radius: 8px; }
+    a.btn:hover { background: #b8921f; }
+    .btn.primary { background: #1a1510; color: #e8c547; }
+    .btn.primary:hover { background: #2d251e; }
+    code { background: #eee; padding: 0.2em 0.4em; border-radius: 4px; font-size: 0.9em; }
+    .copy { background: #1a1510; color: #e8c547; padding: 1rem; border-radius: 8px; margin: 0.5rem 0; font-family: monospace; font-size: 0.85rem; }
+    p { color: #333; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <h1>Harman da Kulcha — Make site live</h1>
+
+  <h2>Option 1: Vercel (easiest — no GitHub, no commands)</h2>
+  <div class="step">
+    <strong>Step 1 — Sign up</strong>
+    <p>Go to Vercel and sign up (free, use Google or email):</p>
+    <a class="btn primary" href="https://vercel.com/signup" target="_blank" rel="noopener">Open Vercel → Sign up</a>
+  </div>
+  <div class="step">
+    <strong>Step 2 — Deploy</strong>
+    <p>Click <strong>Add New…</strong> → <strong>Project</strong>. If asked for scope, choose <strong>avdeshgill04-9723</strong>. Then <strong>drag and drop</strong> this whole folder (<strong>Harman Da kulcha</strong>) onto the page. Click <strong>Deploy</strong>.</p>
+    <a class="btn" href="https://vercel.com/new" target="_blank" rel="noopener">Open Vercel → New Project</a>
+  </div>
+  <div class="step">
+    <strong>Done</strong>
+    <p>In about a minute you’ll get a link like <code>https://harman-da-kulcha-xxx.vercel.app</code>. Share that link — your site is live. No GitHub needed.</p>
+  </div>
+
+  <h2>Option 2: GitHub Pages</h2>
+  <div class="step">
+    <strong>Step 1 — Create the repo</strong>
+    <p>Click below. On GitHub: name <code>harman-da-kulcha</code>, Public, do <strong>not</strong> add README. Click <strong>Create repository</strong>.</p>
+    <a class="btn" href="https://github.com/new?name=harman-da-kulcha&description=Best+kulcha+in+Hapur" target="_blank" rel="noopener">Open GitHub → Create repo</a>
+  </div>
+  <div class="step">
+    <strong>Step 2 — Push</strong>
+    <p>In PowerShell, paste and run:</p>
+    <div class="copy">cd "c:\Users\HP\OneDrive\Desktop\Harman Da kulcha"<br>git push -u origin main</div>
+  </div>
+  <div class="step">
+    <strong>Step 3 — Pages</strong>
+    <p>Repo → <strong>Settings</strong> → <strong>Pages</strong> → Source: <strong>Deploy from a branch</strong> → Branch: <strong>main</strong>, folder: <strong>/ (root)</strong> → <strong>Save</strong>. Site: <strong>https://avdeshgill04.github.io/harman-da-kulcha</strong></p>
+  </div>
+
+  <p style="margin-top: 2rem; font-size: 0.9rem; color: #666;">More details: <code>VERCEL-DEPLOY.md</code> (Vercel) or <code>GITHUB-PAGES-STEPS.md</code> (GitHub).</p>
+</body>
+</html>
