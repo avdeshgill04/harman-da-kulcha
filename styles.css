@@ -68,12 +68,21 @@ body {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: var(--font-display);
   font-size: 1.35rem;
   font-weight: 400;
   color: var(--color-gold);
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -557,10 +566,20 @@ body {
 }
 
 .footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   font-family: var(--font-display);
   font-size: 1.25rem;
   color: var(--color-gold);
   margin: 0 0 0.25rem;
+}
+
+.footer-logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .footer-tagline {
